@@ -1,42 +1,69 @@
-# Template for short-and-sweet lightning talks
+---
+marp: true
+title: Pact
+description: Pact
+theme: uncover
+paginate: true
+_paginate: false
+header: "**Enis Spahi** Short and Sweet"
+style: |
+  section {
+    font-size: 30px;
+  }
+---
 
-## Inspiration/background
+# Short and sweet
 
-* https://www.chessable.com/chess-openings/s/short%20sweet
-* https://en.wikipedia.org/wiki/Lightning_talk
+## Pact: Consumer Driven Contracts
 
-## Why
+---
 
-**If** you want to 
+#### Do you set your house on fire to test your smoke alarm?
+#### [pact.io](https://docs.pact.io/)
 
-* share a use-case/problem solution from your project
-* share experience with a technology/tool/framework
-* dive (deeper) into new topics
-* learn by doing
+![bg left 60%](assets/smoke_detector.png)
 
-**then** a lightning talk is what you need!
+---
 
-The goal of the short-and-sweet talk is not to provide an extensive teach-in experience - it's about knowledge sharing and inspiration to dive deeper later.
+## What is pact?
 
-## What
+![bg right 60%](assets/api-consumer-contracts.drawio.png)
 
-* slides (Markdown/AsciiDoc)
-  * you might want to use Marp (https://marpit.marp.app) in VSCode + Marp extension
-    * see also https://github.com/yhatt/marp-cli-example
-* code
-* script/helper snippers to speed up the demo
+* Contract Testing
+    - An alternative paradigm to Integration testing
+* Consumer first
+    - An alternative to Code First and Contract First API development
+* Can I deploy?
+    - Sync rollouts
+    - Verify breaking changes before deployments
 
+---
 
-## When
+# Demo: Consumer First API Example
 
-TBD, most probably at lunch time aka 'Brown Bag Meeting' - simply announce and/or book the next available slot.
+[Consumer first API example](https://github.com/enisspahi/consumer-first-api-example)
 
-Overall duration should be around 15-30 mins to reserve enough time to come to the meat of the talk **and** to have 5-10 mins for Q&A
+---
 
-## How
+# Demo: Message Driven Pact Example
+[Pact Messaging example](https://github.com/enisspahi/pact-messaging)
 
-* prepare the [What](##What)
-  * based on this template
-  * let https://github.com/OpenValue-D fork it
-* book the [When](##When)
-* and have fun
+---
+
+# When to use Pact?
+
+- Provider matches consumer needs during API development
+- API consumer and provider test their applications independently
+- To reduce the overhead while syncing API and consumer rollout
+- On small number of consumers
+
+---
+
+# References
+
+- [pact.io](https://pact.io/)
+- [Communicating our APIs: Three methodologies of API Development](https://openvalue.blog/posts/2023/11/26/communicating_our_apis_part2/)
+
+---
+
+# Q&A
